@@ -40,7 +40,8 @@
                    <ol>
                        <li>                        <i> Deployment </i> e testes em ambientes reais                                                </li>
                        <li>                        Estudo sobre alterntaivas para alimentação do sistema                                          </li>
-                   </ol>                
+                   </ol>
+	       <li>                            Referências                                                                                         </li>
 </ol>
 
 <h2 align="center">                            Descrição do projeto                                         </h2>
@@ -91,18 +92,79 @@ De maneira geral podemos dizer que as CNNs são um tipo específico de rede neur
       <h3 align="center">                            Metodologia para seleção do provedor de serviçoes em nuvem                                          </h3>
 <p  align="justify" style="margin-top: 5px; "> <i> </p>
       <h3 align="center">                            Métricas de Avaliação para Modelos de <i> Machine Learning </i> e <i> Deep Leaning                                         </h3>
-<p  align="justify" style="margin-top: 5px; "> <i> </p>
-      <h3 align="center">                            Métricas de Avaliação para o Projeto                                          </h3>
+<p  align="justify" style="margin-top: 5px; "> <i>Para a avaliação do desempenho dos classificadores de detecção de incêndios florestais, foram utilizadas as métricas de Acurácia (AC) proporção dos classificados corretamente para todas as classes, Recall (RC) proporção dos incêndios encontrados no algoritmo, Precisão (PR) observações classificadas como fogo que eram na verdade fogo, F1-score (F1) média harmônica do recall e da precisão (RODRIGUES, 2019). As equações são representadas na figura a seguir:</p>
+	
+<p align="center">
+  <img width="300px" heigth="300px" src="https://github.com/ErickB51/tcc-sdi/blob/main/Imagens/metricas.png">
+</p>	
+	
+<p  align="justify" style="margin-top: 5px; "> <i>Os valores de TP e FP referem-se se a casos verdadeiros-positivos (o classificador detectou corretamente o incêndio) e casos falsos-positivos (o classificador detectou um incêndio quando não estava ocorrendo), respectivamente. Os valores TN e FN referem-se a casos verdadeiros-negativos (o classificador detectou corretamente a ausência de incêndio) e casos falsos-negativos (o classificador não detectou um incêndio quando na verdade ocorria um incêndio) respectivamente. Na figura abaixo é mostrado a matriz de confusão.</p>
+
+<p align="center">
+  <img width="300px" heigth="300px" src="https://github.com/ErickB51/tcc-sdi/blob/main/Imagens/matrizconfusao.png">
+</p>	
+	
+<p  align="justify" style="margin-top: 5px; "> <i>Também foi utilizado a curva de Receiver Operating Characteristic (ROC). esta curva é uma das formas de analisar classificadores em problemas binários, o algoritmo é considerado perfeito quando ele possui maior protuberância em direção ao canto superior esquerdo que é mostrado na figura abaixo.</p>
+
+<p align="center">
+  <img width="300px" heigth="300px" src="https://github.com/ErickB51/tcc-sdi/blob/main/Imagens/roc.png">
+</p>
+
+<h3 align="center">                            Métricas de Avaliação para o Projeto                                          </h3>
 <p  align="justify" style="margin-top: 5px; "> <i> </p>
  
 <h2 align="center">                            Design dos Experimentos                                         </h2>
         
 <h2 align="center">                            Resultados                                         </h2>
 
-  <h3 align="center">                            Modelos selecionados                                         </h3>
-<p  align="justify" style="margin-top: 5px; "> <i> </p>
-    <h3 align="center">                            Resultado dos modelos                                         </h3>
-<p  align="justify" style="margin-top: 5px; "> <i> </p>
+<h3 align="center">                            Modelos selecionados                                         </h3>
+<p  align="justify" style="margin-top: 5px; "> <i>• ConvNet. Proposto por Yann LeCun et al. (1998), são um tipo específico de rede neural artificial bastante eficaz para classificação de imagens pois são capazes de levar em consideração a coerência espacial da imagem, ou seja, que pixels próximos uns dos outros estão frequentemente relacionados</p>
+	
+<p align="center">
+  <img width="300px" heigth="300px" src="https://github.com/ErickB51/tcc-sdi/blob/main/Imagens/convnet.png"></p>
+
+<p  align="justify" style="margin-top: 5px; "> <i>• InceptionV3. Proposto por Szegedy et al. (2015), é uma arquitetura de CNN que busca a resolução de diversos problemas de reconhecimento de imagens em grande escala e também podem ser utilizados em problemas de transfer learning (descrito anteriormente). O seu diferencial é a presença de módulos extratores de características convolucionais. Estes módulos tem como funcionalidade aprender com  menos parâmetros que contém uma maior gama de informação.</p>
+	
+<p align="center">
+  <img width="300px" heigth="300px" src="https://github.com/ErickB51/tcc-sdi/blob/main/Imagens/Inceptionv3.png"></p>
+
+<p  align="justify" style="margin-top: 5px; "> <i>• Xception. Proposto por Chollet et al.(2016), é uma arquitetura de CNN similar ao Inception descrito anteriormente e, tem como diferencial que os módulos de iniciação foram substituidos por convoluções separáveis em profundidade. A Xception possui a mesma quantidade de parâmetros que o InceptionV3 com o total de 36 camadas convolucionais. Assim, tendo um uso mais eficiente dos parâmetros.</p>
+	
+<p align="center">
+  <img width="300px" heigth="300px" src="https://github.com/ErickB51/tcc-sdi/blob/main/Imagens/Xception.png"></p>
+
+	
+<p  align="justify" style="margin-top: 5px; "> <i>• VGG16. Proposto por K. Simonyan et al. (2014), é uma arquitetura de CNN que apresenta uma menor quantidade de camadas e uma distribuição de pesos que é capaz de extrair diversas características. Também são utilizadas com técnicas de transfer learning.</p>
+	
+<p align="center">
+  <img width="300px" heigth="300px" src="https://github.com/ErickB51/tcc-sdi/blob/main/Imagens/VGG16.png"></p>
+
+	
+<p  align="justify" style="margin-top: 5px; "> <i>• MobileNet. Proposto por Howard et al. (2017), é uma arquitetura de CNN que foram criados para a executação de tarefas de visão computacional em dispositivos móveis e sistemas embarcados. Eles são baseados em operações de convolução separáveis em profundidade, que diminui o ônus das operações nas primeiras camadas.</p>
+	
+<p align="center">
+  <img width="300px" heigth="300px" src="https://github.com/ErickB51/tcc-sdi/blob/main/Imagens/MobileNet.png"></p>
+   
+<h3 align="center">                            Resultado dos modelos                                         </h3>
+<p  align="justify" style="margin-top: 5px; "> <i>- Performance no treinamento e validação: 
+O conjunto de dados de treinamento está balanceado e consiste de 1520 imagens no total, onde 760 imagens pertecem a cada classe com resolução espacial de 250 x 250. Este conjunto de dados foi dividido em 80:20:20 (1216 imagens ficaram para o treinamento, 304 para validação e 380 para o teste do modelo). Os resultados da avaliação se encontram na tabela abaixo.</p>
+
+<p align="center">
+  <img width="300px" heigth="300px" src="https://github.com/ErickB51/tcc-sdi/blob/main/Imagens/results_train.png"></p>
+
+<p  align="justify" style="margin-top: 5px; "> <i>- Performance no Testset1: 
+O conjunto de dados Testset1 está balanceado e consiste de 380 imagens no total, onde 190 imagens pertecem a cada classe com resolução espacial de 250 x 250. Este conjunto de dados foi dividido em 80:20 como descrito anteriormente e, por esta razão possuí menos imagens para teste. Os resultados da avaliação se encontram na tabela abaixo.</p>
+
+
+<p align="center">
+  <img width="300px" heigth="300px" src="https://github.com/ErickB51/tcc-sdi/blob/main/Imagens/results_test1.png"></p>
+
+<p  align="justify" style="margin-top: 5px; "> <i>- Performance no Testset2: 
+O conjunto de dados Testset2 está desbalanceado e consiste de 998 imagens no total, onde 755 imagens pertecem a classe fogo e 243 a classe não fogo e as imagens possuem diferentes resoluções. Portanto, este conjunto de dados é mais adequado para realizar a avaliação do desempenho do modelo do que para treinâ-lo por estar desbalanceado. Os resultados da avaliação se encontram na tabela abaixo.</p>
+
+<p align="center">
+  <img width="300px" heigth="300px" src="https://github.com/ErickB51/tcc-sdi/blob/main/Imagens/results_test2.png"></p>
+</p>
       <h3 align="center">                            Componentes selecionados                                         </h3>
 <p  align="justify" style="margin-top: 5px; "> <i> </p>
       <h3 align="center">                            Resultado dos testes dos componentes                                          </h3>
@@ -124,3 +186,50 @@ De maneira geral podemos dizer que as CNNs são um tipo específico de rede neur
 <p  align="justify" style="margin-top: 5px; "> <i> </p>
 
 <h2 align="center">                            Referências                                         </h2>
+
+<p  align="justify" style="margin-top: 5px; "> <i>Dennison et al. (2014), "Wildfires and Climate Change", https://www.c2es.org/content/wildfires-and-climate-change/, Abril
+
+A. Matias (2020), "Queimadas na Amazônia", https://mundoeducacao.uol.com.br/geografia/queimadas-na-amazonia.htm, Abril
+
+C. Altman, (2020) "Inteligência Artificial está em alta em 2020", https://www.em.com.br/app/noticia/ciencia/2020/02/06/interna_ciencia,1119794/inteligencia-artificial-esta-em-alta-em-2020.shtml, Abril
+
+Lin, Cheng-Jian, and Shiou-Yun Jeng (2020). “Optimization of Deep Learning Network Parameters Using Uniform Experimental Design for Breast Cancer Histopathological Image Classification.” In Diagnostics (Basel, Switzerland).
+
+Stefanini (2019), "Inteligência Artificial nos setores da economia: entenda as funcionalidades", https://stefanini.com/pt-br/trends/artigos/inteligencia-artificial-nos-setores-da-economia, Abril
+
+Cavanagh, (2019), "Artificial Intelligence Is Attracting Investors, Inventors, and Academic Researchers Worldwide", https://marketbrief.edweek.org/marketplace-k-12/artificial-intelligence-attracting-investors-inventors-academic-researchers-worldwide/, Abril
+
+Korolov, (2018), "O maior fator de risco da Inteligência Artificial? Dados errados", https://cio.com.br/tendencias/o-maior-fator-de-risco-da-inteligencia-artificial-dados-errados/, Abril
+
+R.Metz, (2020), "How AI is helping spot wildfires faster", https://edition.cnn.com/2019/12/05/tech/ai-wildfires/index.html, Abril
+
+Khan, Ali; Hassan, Bilal (2020), “Dataset for Forest Fire Detection”, https://data.mendeley.com/datasets/gjmr63rz2r/1, Maio
+Rodrigues, (2019), "Métricas de Avaliação: acurácia, precisão, recall… quais as diferenças?" https://vitorborbarodrigues.medium.com/m%C3%A9tricas-de-avalia%C3%A7%C3%A3o-acur%C3%A1cia-precis%C3%A3o-recall-quais-as-diferen%C3%A7as-c8f05e0a513c, Maio
+Szegedy, C., Vanhoucke, V., Ioffe,S., Shlens,J.,&Wojna,Z.(2016) “Rethinking the inception architecture for computer vision” In Proceedings of the IEEE conference on computer vision and pattern recognition.
+François  Chollet (2016), “Xception:  Deep  learning  with  depthwise  separable convolutions”, In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) pages 1251-1258. Publishing Press.
+Simonyan, K. and Zisserman, A. (2014). “Very deep convolutional networks for large-scale image recognition”, In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) pages 1409-1556. Publishing Press.
+N. S. Sanjay and A. Ahmadinia (2019), “MobileNet-Tiny: A Deep Neural Network-Based Real-Time Object Detection for Rasberry Pi”, In 18th IEEE International Conference On Machine Learning And Applications (ICMLA) pages 647-652. Publishing Press.
+
+Brandizzi,  (2020), “Visão computacional: O que é? Como funciona?”, https://www.serpro.gov.br/menu/noticias/noticias-2020/o-que-eh-visao-computacional, Junho
+
+Alves, (2018), “Entendendo Redes Convolucionais (CNNs)”, https://medium.com/neuronio-br/entendendo-redes-convolucionais-cnns-d10359f21184, Junho
+
+Aliger, (2019), “As Redes Neurais Convolucionais no Deep Learning”, https://www.aliger.com.br/blog/as-redes-neuronais-convolutivas-no-deep-learning/, Abril
+
+Noleto, (2020), “Sistemas embarcados: o que são, características e exemplos de aplicação!”, https://blog.betrybe.com/tecnologia/sistemas-embarcados/, Abril
+
+Backes, Ricardo (2019). “Introdução a Visão Computacional usando MATLAB” In google scholar.
+
+Vargas, Carvalho, Vasconcelos. “Um estudo sobre Redes Neurais Convolucionais e sua aplicacão em detecção de pedestres”In gibis unifesp.
+
+Batista, (2004), “Detecção de Incêndios Florestais por Satélites” In queimadas Dgi.
+
+Devecchi, (2015). “Um Sistema de Ponto Eletrônico Digital: projeto e implementação de hardware e software (Atividade Prática de Desenvolvimento de Software)” In researchgate.
+
+Tonghao Chen, (2019). “Implementing Efficient and Multi-Hop Image Acquisition In Remote Monitoring IoT systems using LoRa Technology” In harvest.
+
+Ramos, (2019). “Uso de uma rede LoRaWAN em um sistema de gerenciamento de lixo”In Cin-UFPE.
+
+
+Therriault, (2020), “Wildfire Smoke A guide for public health Officials”, https://depts.washington.edu/wildfire/resources/pubhealthguide.pdf, Junho
+</p>
