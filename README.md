@@ -56,9 +56,13 @@
 <h2 align="center">                            Contextualização                                         </h2>
 
 <h3 align="center">                            Detecção de incêndios florestais                                         </h3>
-<p  align="justify" style="margin-top: 5px; ">Um dos grandes problemas encarado hoje é o considerável aumento do número de incêndios e a extensão das áreas queimadas, além de causar um grande dano aos ecossistemas florestais, causando grandes impactos diretos e indiretos ao meio ambiente (BATISTA, 2004).
-	Para se tornar eficaz a detecção de incêndios precisa ser rápida e eficiente para viabilizar o combate ao fogo, como reduzir os custos nas operações, é importante ter a informação precisa sobre a localização e extensão da área queimada. Os métodos de detecção de incêndios florestais são peças fundamentais para o planejamento do controle, como para dimensionar os efeitos do fogo sobre o ambiente.
-	Existem muitas formas de detecção que podem ser utilizadas, o que vai influenciar na escolha da estratégia será a extensão da área a ser monitorada e as características do ambiente, existem estratégias de detecção como vigilância terrestre com postos e torres de observação, patrulhamento aéreo, monitoramento com imagens de satélites e soluções com visão computacional.</p>
+<p  align="justify" style="margin-top: 5px; ">Um grande problema a ser encarado atualmente é o aumento considerável do número de incêndios florestais, bem como da extensão das respectivas áreas queimadas. Este problema, como já exposto anteriormente na seção de introdução, motivação e objetivo, impacta, direta e indiretamente, de forma negativa, em diferentes esferas – socioambiental, por exemplo (BATISTA, 2004). Para que o processo de combate aos incêndios florestais seja realizado de maneira eficiente e para que, consequentemente, os custos operacionais sejam reduzidos, é de vital importância que existam meios de obtenção de informações, identificação e detecção precípite dos incêndios florestais. Para o desenvolvimento de métodos e estratégias de obtenção de informações acerca de incêndios florestais devem ser considerados diversos fatores como, por exemplo: a extensão da área que será monitorada, as características do ambiente, as limitações que impeçam certos tipos de métodos de vigilância e que favoreçam outros tipos.</p>
+<p align="justify">&emsp;Atualmente, no contexto brasileiro de tecnologias voltadas a prevenção e combate de incêndios florestais, existem diversos desafios. Os principais métodos de percepção destes eventos, isto é, voltados a grandes áreas, são, geralmente, métodos que envolvem técnicas de sensoriamento remoto por satélite. Assim posto, um dos principais desafios que podem ser observados é a dificuldade de detecção quando existem interferências, sejam elas de caráter eletromagnético ou de caráter geoespacial – como no caso da presença de copas de árvores muito volumosas, o que dificulta na visualização de pequenos focos de incêndio.</p>
+<p align="justify">&emsp;Segundo o site do órgão de Redução de Emissões por Desmatamento e Degradação florestal (REDD+), os sistemas de monitoramento florestal desenvolvidos pelo governo federal são, em sua maioria, como dito anteriormente, baseados em sensoriamento remoto por satélite. Ainda, de acordo com os artigos consultados, o principal desenvolvedor de sistemas de monitoramento utilizados é o Instituto Nacional de Pesquisas Espaciais (INPE) que, através de parcerias mantidas com o Ministério do Meio Ambiente (MMA), com o Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (IBAMA), com a Empresa Brasileira de Pequisa Agropecuária (EMBRAPA) – vinculada ao Ministério da Agricultura, Pecuária e Abastecimento (MAPA) – e com as Universidades Públicas, desenvolve tais projetos.</p>
+<p align="justify">&emsp;Um dos principais projetos citados voltado ao monitoramento e detecção de incêndios florestais é o Programa de Monitoramento de Queimadas e Incêndios. Tal programa é mantido pelo INPE e desempenha função vital na obtenção e disponibilização de dados diários sobre focos de incêndio. Segundo informações obtidas pelo site do IBAMA e do programa, há diversos desafios que impedem que determinadas queimadas sejam detectadas, sendo eles: frentes de fogo com menos de trinta metros, fogo apenas no chão de uma floresta densa (sem afetar a copa das árvores), nuvens (exceto as de fumaça) cobrindo a região, queimadas encobertas por montanhas e imprecisão na localização do foco (podendo chegar a seis quilômetros).</p>
+<p align="justify">&emsp;É importante dizer que são diversos os programas desenvolvidos com o intuito de mitigar o problema mas que os desafios, principalmente dos projetos que utilizam monitoramento por satélite, são os mesmos.</p>
+<img align="center" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JPSS-1.jpg/1024px-JPSS-1.jpg">
+<p align="center"> Figura 1. Representação ilustrativa do satélite NOAA-20.</p>
   
   <h3 align="center">                            Redes neurais convolucionais                                         </h3>
 <p  align="justify" style="margin-top: 5px; ">Uma rede neural convolucional possui múltiplas partes com funções diferentes, uma camada de convolução é composta por diversos neurônios, sendo que cada um é responsável por aplicar um filtro em um pedaço específico da imagem. As Redes Neurais Convolucionais possuem um alto índice de acurácia para o reconhecimento de imagem. A primeira aplicação efetiva de uma convolutional neural network (CNN) foi desenvolvida em 1998 por Yann LeCun. As CNNs ficaram cada vez mais profundas e complexas com o passar dos anos (Alves, 2018).
@@ -189,9 +193,19 @@ O conjunto de dados Testset2 está desbalanceado e consiste de 998 imagens no to
 
 <h2 align="center">                            Referências                                         </h2>
 
-<p  align="justify" style="margin-top: 5px; "> <i>Dennison et al. (2014), "Wildfires and Climate Change", https://www.c2es.org/content/wildfires-and-climate-change/, Abril
+<p  align="justify" style="margin-top: 5px; ">Dennison et al. (2014), "Wildfires and Climate Change", https://www.c2es.org/content/wildfires-and-climate-change/, Abril.</p>
 
-A. Matias (2020), "Queimadas na Amazônia", https://mundoeducacao.uol.com.br/geografia/queimadas-na-amazonia.htm, Abril
+<p align="justify" style="margin-top: 5px; ">A. Matias (2020), "Queimadas na Amazônia", https://mundoeducacao.uol.com.br/geografia/queimadas-na-amazonia.htm, Abril.</p>
+
+<p align="justify" style="margin-top: 5px; ">“Monitoramento de queimadas em imagens de satélites”, http://www.ibama.gov.br/consultas/incendios-florestais/consultas-monitoramento-de-queimadas/monitoramento-de-focos-de-queimadas-em-imagens-de-satelites, Abril.</p>
+
+<p align="justify" style="margin-top: 5px; ">“Sistemas de monitoramento”, http://queimadas.dgi.inpe.br/queimadas/portal, Abril.</p>
+
+<p align="justify" style="margin-top: 5px; ">“Perguntas frequentes”, http://queimadas.dgi.inpe.br/queimadas/portal/informacoes/perguntas-frequentes#p2, Abril.</p>
+
+<p align="justify" style="margin-top: 5px; ">“Monitoramento”, http://redd.mma.gov.br/pt/monitoramento, Abril.</p>
+
+<p align="justify" style="margin-top: 5px; ">“Centro Nacional de Prevenção e Combate aos Incêndios Florestais (Prevfogo)”, http://www.ibama.gov.br/prevfogo#programas-e-projetos, Abril.</p>
 
 C. Altman, (2020) "Inteligência Artificial está em alta em 2020", https://www.em.com.br/app/noticia/ciencia/2020/02/06/interna_ciencia,1119794/inteligencia-artificial-esta-em-alta-em-2020.shtml, Abril
 
