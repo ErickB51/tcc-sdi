@@ -1,6 +1,6 @@
 <h1 align="center">                            Sistema de Detecção de Incêndios Florestais (SDIF)                                                 </h1>
 <p align="center">
-  <img width="300px" heigth="300px" src="https://github.com/ErickB51/tcc-sdi/blob/main/Imagens/logo-editada.png">
+  <img width="300px" heigth="300px" src="https://github.com/ErickB51/tcc-sdi/blob/main/Imagens/logo-editada-transparente_auto_4x.png">
 </p>
 <h3 align="center">                            Sumário                                                                                            </h3>
 
